@@ -42,3 +42,4 @@ Dane o grach pobierane są z API: [FreeToGame API](https://www.freetogame.com/ap
    android
    iOS
    Web
+5. Prezentacja wideo załączona w zadaniu na teams
