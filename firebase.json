@@ -1,0 +1,39 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "wyszukiwarka-darmowych-gier",
+          "appId": "1:292156705530:android:f4899347496c6761da1743",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "wyszukiwarka-darmowych-gier",
+          "configurations": {
+            "android": "1:292156705530:android:f4899347496c6761da1743",
+            "ios": "1:292156705530:ios:b56579a95762f4bfda1743",
+            "macos": "1:292156705530:ios:b56579a95762f4bfda1743",
+            "web": "1:292156705530:web:a6ec2b2fea8cfcdcda1743",
+            "windows": "1:292156705530:web:d9e3bc886a3aa098da1743"
+          }
+        }
+      }
+    }
+  },
+  "hosting": {
+    "public": "build/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

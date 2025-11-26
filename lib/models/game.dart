@@ -31,4 +31,17 @@ class Game {
       releaseDate: json['release_date'] ?? "Brak daty",
     );
   }
+
+  Map<String, dynamic> toJson() {
+    return {
+      'id': id,
+      'title': title,
+      'thumbnail': thumbnail,
+      'short_description': shortDescription,
+      'genre': genre,
+      'platform': platform,
+      'publisher': publisher,
+      'release_date': releaseDate,
+    };
+  }
 }
