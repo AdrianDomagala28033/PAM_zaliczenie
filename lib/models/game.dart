@@ -1,4 +1,4 @@
-// models/game.dart
+
 class Game {
   final int id;
   final String title;
@@ -8,7 +8,7 @@ class Game {
   final String shortDescription;
   final String publisher;
   final String releaseDate;
-  final String gameUrl; // <-- dodajemy to pole
+  final String gameUrl;
 
   Game({
     required this.id,
@@ -19,7 +19,7 @@ class Game {
     required this.shortDescription,
     required this.publisher,
     required this.releaseDate,
-    required this.gameUrl, // <-- dodajemy do konstruktora
+    required this.gameUrl,
   });
 
   factory Game.fromJson(Map<String, dynamic> json) {
@@ -32,7 +32,7 @@ class Game {
       shortDescription: json['short_description'] ?? '',
       publisher: json['publisher'] ?? '',
       releaseDate: json['release_date'] ?? '',
-      gameUrl: json['game_url'] ?? '', // <-- tutaj przypisujemy
+      gameUrl: json['game_url'] ?? '',
     );
   }
 }
